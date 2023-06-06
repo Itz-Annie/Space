@@ -1,0 +1,36 @@
+.carousel-inner img{
+    height: 500px;
+    width: 500px;
+    border-radius: 20%;
+}
+
+#img6{
+height: 500px;
+width: 750px;
+border-radius: 20%;
+}
+
+#img8{
+    height: 500px;
+    width: 750px;
+    border-radius: 20%;
+    }
+
+.carousel-inner p{
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+#img_space{
+    width: 1000px;
+    height: 750px;
+}
+
+#space_text{
+    width: 500px;
+}
+
+body{
+    background: linear-gradient(rgb(6, 25, 110) 0%, rgba(75, 184, 235, 0.712) 100%);
+}

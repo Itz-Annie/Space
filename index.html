@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Space</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Space</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="#What is Space?">What is Space?</a></li>
+                <li><a href="#Planets">Planets</a></li>
+                <li><a href="#Telescopes">Telescopes</a></li>
+                <li><a href="#Constellations">Constellations</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <h2 class="page-header" id="What is Space?">What is space</h2>
+
+    <center>
+
+        <img id="img_space" src="https://quotefancy.com/media/wallpaper/3840x2160/124040-Felix-Baumgartner-Quote-Sometimes-you-have-to-go-up-really-high-to.jpg" alt="">
+
+        <p id="space_text">What is Space? Space, also known as outer space, is the area directly outside of Earth's atmosphere. Space
+            technically begins at the Kármán Line, which is about 100 km or 62 miles above the Earth. Unlike Earth,
+            there is no air in space, which is why astronauts have to wear high-tech spacesuits to travel there.</p>
+    </center>
+
+    <h2 class="page-header" id="Planets">Planets</h2>
+
+    <center>
+
+        <div id="myCarousel" class="carousel slide">
+            <center>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <a href="https://solarsystem.nasa.gov/planets/mercury/overview/" target="_blank"><img id="img1"
+                                src="Mercury.jpg" alt=""> </a>
+                        <p>Mercury is the smallest planet in our solar system. It’s a little bigger than Earth’s Moon.
+                            It is the
+                            closest planet to the Sun, but it’s actually not the hottest. Venus is hotter.</p>
+                    </div>
+
+                    <div class="item">
+                        <a href="https://solarsystem.nasa.gov/planets/venus/overview/" target="_blank"><img id="img2"
+                                src="venus.png" alt=""> </a>
+                        <p>Venus is the second planet from the Sun and is Earth’s closest planetary neighbor. It’s one
+                            of the four inner, terrestrial (or rocky) planets, and it’s often called Earth’s twin
+                            because it’s similar in size and density. These are not identical twins, however – there are
+                            radical differences between the two worlds.</p>
+                    </div>
+
+                    <div class="item">
+                        <a href="https://solarsystem.nasa.gov/planets/earth/overview/" target="_blank"><img id="img3"
+                                src="Earth.png" alt=""> </a>
+                        <p>While Earth is only the fifth largest planet in the solar system, it is the only world in our
+                            solar system with liquid water on the surface. Just slightly larger than nearby Venus, Earth
+                            is the biggest of the four planets closest to the Sun, all of which are made of rock and
+                            metal.</p>
+                    </div>
+
+                    <div class="item">
+                        <a href="https://solarsystem.nasa.gov/planets/mars/overview/" target="_blank"><img id="img4"
+                                src="mars3.png" alt=""> </a>
+                        <p>​Mars is the fourth planet from the Sun – a dusty, cold, desert world with a very thin
+                            atmosphere. Mars is also a dynamic planet with seasons, polar ice caps, canyons, extinct
+                            volcanoes, and evidence that it was even more active in the past.</p>
+                    </div>
+
+                    <div class="item">
+                        <a href="https://solarsystem.nasa.gov/planets/jupiter/overview/" target="_blank"><img id="img5"
+                                src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYWFRgWFhYYGBgaHCEcHBwcGh4hHR4cGBgaHBwaHCQjIS4lHB4rIRoYJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHhISHzQsISs0NDQ0NDQ2NDQ0NDQ0NDQ0NDQ0NDQ0NjQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAABAMFAQIGBwj/xAA/EAABAgQDBAULAwMDBQAAAAABAAIDBBEhMUFhBRJRcRMigZGhBgcUMkJSscHR4fBigvEVcpIWI6IzQ4Oywv/EABgBAQEBAQEAAAAAAAAAAAAAAAABAgME/8QAJREAAgIBBQEBAAMBAQEAAAAAAAECEhEDEyFBUTFhIqHwgdEU/9oADAMBAAIRAxEAPwD2ZCEIAQhCAEIQgMIWrnACpsAuV2x5Zw2VbBHSvwr7APMXd2W1UbSLg6yq5/aXlfKQagxN9w9lnWPKvqg9q4Dae1JiYtEcSPdFmj9oN+2qr/Rzr3fws2NVOqnfOG81EGC1uryXH/FtAO8qlmfKudif90sHBrWt8cfFINlSMPoj0XS+t1HMVI4u0o7vWjxXc4jj4VslXudmSdXVVgJUkEgVpqB9FC+CLF293/ZSwqIXGnK3cpoe0Y7fUjRG8nvHwKYErmO/VD5Sv544K2FRiB5Wz0PCYc4cHta6vaQT4q6kvOTHaQIsBjxxY4sPcd4HwXLulzwUTmfpVsSp6ps3y9k4tA55gu4RBuj/ACFW95C6eHEDgC0gg3BBqCOIOa+fXQvwJjZ+0o8ud6BFcy9S3Fh5tPVJ1olhg9+QvO9geclrqMm2hjsOkYCWE/qbdzPEcl30vHa9ocxzXNcKhzSCCOIIsVrJkmQhCoBCEIAQhCAEIQgBCEIAQhCAwq/au1YcBu883ODRieWmpsldu7bbAG6KOiEWbkP1O00z8Vwkw9z3Fz3Fz3Yn5DgNFzlqKPCNxg3yTbZ2xFmDRzt1nuNw/cfbPhwCShy4/LKeHA4gJgAGtsPy/Fcb5OtBIS+gW/R6BNhg5d6Htpw7ksKi7YFctc0CW/MPkpQbVWS2vYpYtRZ0qM1C+EAcU5vVFRRRvhpYVFBDHHuWpYOKZfDooHvAy7FbEwLGFwUb4WaaeagU8cf4UJOitiVFXwFE6XTxZVG5a90sKlTEliMPzsU+xdtx5N29BdRtauhuux3Meyf1Ch5iybMMJGPD0WlIy4nrXkx5VwZwUb1IoFXQ3G/9zT7bdRxuAujXzmWuY4PY5zXsNWuaaOaRmCvUPIny5EwRAmKMj+y7BsWnD3X/AKcDiMwOqlkw44O8QhC0ZBCEIAQhCAEIQgMKm27tcQW7raGI4WGQHvO04DPvTm1J5sFhcbnADicguHdvPcXONXONT+cALLlqTxwvp0hHPLFH7ziXO6ziauJxJKxDFzxTvQ6LT0ei8+GzvlIgIJpopmMFOF7qdkC+CmZAVqxZELr4Vpr4dnJadDxTghaFZ9Hr+FVQb6MOaXYh6Pa+FUPaaZV8OasXypotWwNKLVJeEvH0q9x38KN0Mq3dLHhTkFqZc6ptyG5Ep3QSonSunarh8Acac1EZfNTbkW8SpMtp4miidBbWlq81culSlzK3wujhLwKcfSsMKmS1MMqzfLqIwUpIt4lcW2ofFLRGVVrEgpZ8JMNEymUkxB/M1VzMLmCMCLEEXBByK6eLBVdMy2i0myNI7vzeeWvpFJaYd/vtHUcf+61ov/5AMRmLjOnoS+aZmC5rg9jix7SHNc00LXNNQ4HIggL2ryB8qhPQOvQR4dGxWjPhEaPddQ8iCMqntF5OUlg6xCELRkEIQgBYJWVR+Um0RDaGZvx0aMe/DvQFNtKM6PELvYbZg0zdzP0RDg0F/EqribRqbOztTAfVbN2iB+o8b/yueYGsSLdu4c+ayxjSqh21iKUFLeP0Q3ar6Wb4FVSX+RHF/wCZdgXpSykoBfdXNO2nE94qVhjvFQHEHQ+Ct30mKLtl+DXgB4rJI4hUTYEemB5LHocfGhHird+Ci9L8nUd6yGFURkYlKlzq8m/yo4kCNqsrUb6K9NLsvN+91C5zSchliqYykSnrOHw8Vq2Tf77xyoo9SXhVpx9/otJiG17C031+YUcGG1gABwzqq50q7339pChfAf7xI1qim/P7Dgvf6LneGII71E5tcSKKqex+TjT4KLdf75FNSrdkov8AIuSwZkKN0MKncCfbP522UQDveNcO9a3H4Z216WrmBRPYOCrS5w9o8loIjjWhbXx+dEU/wUx2MxoQSUaCFmIXjNt9b/JQPe/Q/mqWXgq/RGalRdVuzdpPkZhkzDqd2z2+/DcRvM52qOBAVpHingO9VE+8EEEK/wAScn0RIzjI0NkWG4OY9oc0jMEVH8JpeQeZjyho6JIPOFYkGvAmr2DtO8Obl6+hQQhCAwuCn5J0xGfEdcVo0HJgsKDx5ldZtuZ3ILiCAT1RXX7VXJMe5xoX20ssSr8ZY26NhsYWwTDNlM4ivYoHvLTXfSkztCgcSaitj31p4Lm9WEeMf2dVpTl2XQ2KzN9/D+Fl0lDbarDzr91TwNpFzRuuq04ceXgpTNClStvUi1lIwtOSeGy0bDZTd3WXGJJIPZuqRkRjGgF9hwBtyqqGLHIxGOF79vCyVjPc8UBPb9Vjf8RvZ9Z0zdpQq2fXmFN6UymNeQC4xretcsFOBTcOOcLf3VoEeu10irQT7Z0/prMx/wAbpR+0m+46mtFSMmb03j2VotjE1r2rL12/hVoJfS3O0W+6R2oM8zHdqeOfwXPvmgLC61hzRcDQYflljfkvDWxF+l+/aUPAtp2KF87BPvd/8KhdMbt3ncBwBuUnG2gx1muJ5tt9Qtb7b5wZ2FjjJ0kSeg8CoIk/DdYMPYueaTldMSs25hrRb3X+E2l+lu+KwYsI1URiwq1BLez44qGa24HNpu5KkdFJ0z+6PVx4/wDhFpZ9X/S/c9nvscOBBCjc9hPVLQeIccOGC58zNDTfB7PyqmEanC+qm8vC7L9Lt5BFy0pKLDYch3qtfMVzS0SLXArW8n0Z2muxyPAbf6qpnJUUWj4zq0FbqGNFdcVwWlOPhlwl6U/pb5WZhTDPWhuDscRW7ToRUHRxX05ITjI0NkVhq2I1r2nRwBHxXy5tZ280jFex+ZLbPSyToDjV0u+g47kSrm1/d0g5NC2mn8MtNHpKyhCpDi/LecO9DhDJpe6mp3Rywd3rnYLHAE4mvq1PDjXHRMeUk+BORKVJswaboHzqeaWgzJDf+m4mvA2F7cyc14tWX8uT16cf48DQYKHfO7UAihcajeoaccHY2slJh4cQchgLUpwopGMe81Lb6iwCwZJ2LieC4ZbZ3wkjXp9247m7o+VaLQzTq1GOWdO03TP9Odu1bSuqSfBiD2e64+K3GEmZlOMfpI6YdmR8/FQuiHMqFsMjGvcnpaXa7MBV6UokWrGQsw0Nqd4PxUheTdzvgFZnZwGDh3KJ8k7n2KVkWyE68Ce2lFo5ww3hX8xyTY2c45eIqlnS26Sd0nW/gs4kXMSG4tjp9VrFa51g6gz4eCkIJy+S3Eo/3e0rSi10RyTFRJilS6pGV+5T9HQeqwHU38KKcSThfepyKgZAdWmtyap95xyPnGeDLmA0qdMrdlLKB0LE1cb8vgmXSr9AONFtFgkUo/e5WA+qZJgQ6MY0GiIrbUoPqdTwT24dBrT6ohyAOJB7fFXIwU4kwTW57kdECbBx5/wrGbiucejZ6oF8qkKB8V7WgEA0wNB8aXWscmM8C3o5x3QBr90tGaCcQ7IAD4qV5fiRU61UMSM+lOr3K5efgwsfReM0iwAAzIx5DgEpFY40DQKG1afFbxt44kpV7nCtCb4rcc+GJY9ENpQd2rS4OOmHNdB5lNpdFtAwibRmObTLeZ12nua8fuXNzIUPkpOmDPy8QGm7GZX+1zg13/Eld4ZOMsH1ghCFswecTEpWYe80JL3EaVcfqrFkvUUI7sFsyHvXwrj2H+U5DZS1KhcpQi/p0U5L4JiUPYpWyQ0KdY3VbNbwWdtL4bu39FDJHDAeCw7Z4pnVPgjKq3a3TL85JUlinfssHEVryWn9HpceJVq2GSFJ0QAsMlpJmW8lV6AKZjtWWSoGasmsOPz+azuOOiuCZEXSh4V7FqYdLG+isDC/UeVFDEZTHsspVFsxISrCfVosOk2+73uTHRn3gOz7LERlBiD3pVCzEouzWHDq8nE9ySiSZFqk8yVbiIB/CiixOCqiiOTKsSvFvcT9Vq+VacajwTb3k5rQE4G/ZdWqJZihkgcCOyqiMgdVZNUlbKOKKpMqGShZhZZe0HEBPxHDVLvYDelVKotmIvgD8slIsuPdHgrJ4NTRLxEqhdlPFlxfqhVczJgYD4q+iqvmGnRaSI3k5iclwuXmeq80tQ2XZT4xXGzh67ufyWjB9M/6rH6e9C8B/wBQP4lCoPfYDSBQYfBMM8Uk95a9zW8XDkQTjpYpgROq1+dKuaMaLVUZsydrqXvXApmGwOGPySbY4cwPbUtBocjTPuTdgARzofjySqJZmTBFaE04KQQnD2qpZkyCaOAocCMOXNSTsd0MYVbx4HVHFFUmTFrtFgQzxCXhTBcKklpzqfqtIs26u6AHEZtI8QTbvUqLje5RYAKX9OdgYbq8/FZfO0s6x1t8EoxdE5acVq6qXftFgx+K1/qLB+nmK/DBVQI5m8VruKVfUcU42KHmx7cFG8PBpVp4Vt44fBWosIPGpUTm8VYF7gesAsvYwtqDRSosVhgla9Apy5zjutoDzWAx9TYEjGjvqEqhZkDmuGIssFwUzYjq7pae2nyS7mjeobdtkqhZmXtHFQOYcltMHcNK2x5a6LV0TdG8SHNz4hKoWIX6pOKzkmHxibjDTgkpiZzomEi5bF44VdHTseLbVVczHFMPFTCLllTtI2K4mYNXHmur2jMWPBci41uoUtv6M/h4IXvH+kP0NQgItuhzJiKALEh3PeA+ZKhY853A4D6/DRXflZA67XZObf8AY4W1qHYaKlhxWPO6QQACKjA0IAH2XGSeeDrHGOQ6QEitCRkf5wW74jh1nPIrwJ7haixFl2gNDAOtU6gtIB7LpuTlobXAudvHLet/jVRZfYbS6FGRyLgvrWteJ7rLPSkn1nuOfPW11NMzRcSbNZgCTjibcfsoDPWpDZ+52LuQyGpS2O//AEuM8YJmzDsADQ41uTzrWq3hhwuGlg49Vp7LV7kjvRKXYexwHgLKSHEac75g1BHNYepJem1CL8GxEyALie095Cjc81uDUZVt3VUT93I+Kj3hk6nKyi1f0PS/Bl80TSpw1WIr3uF2kjXPnx7kk6MR7XetOnrjTnWnhgtqbxnJlwWcYLBu0HAHjy+/yUTpqK7kOIP1SUScOAIHIj4BQPmuBN+J+St36KrwsfSnk9ZznHgDT4UWsWafmKU0P1VaZkhpba/yyWoNfWJOlSpb9FfwefNvGLqZVvWnAVr4BRMj3sb5ne+JSMQCtvmfitXkkXN8lXLP1hLHxFnEjOp645VP0S7YxxDj3kJIAmxNQtojhSgpTmckTS7I030SxI7hn3mta8sVFFjuNt7sy+NEtFfw+KjMU0INyRTkNFqy9M1/CeLGGG+bafCyVivDs3O5/Otlqx9OCUjRXVyFDXBSyLhmJmLXXtVfMP40+K3eaZpGYjcOFFU0TDKvasWxUPkxKdNOS8Kld+KwHkXje8KpfaESpouy8zGzel2k19LQWPeeFSNxoOtX1/auiMM+jUIQqQovK2U35dxGLDvjkKh3gSexcPLY9Uk0vbO1QPh2r1J7QQQRUGxGhXBx9lhkRzQ4tc02OhuO8LEouXw1GSX0RfU0IDHUtVl9etwxxWkeZB9apAO60DMA3pwH34Kd+xziDWlxQ0I40PyUMWVcxwc8E0FAaD5Z3XNxkvp0Uov4Ny0kXkPiftaMAMgOATj5VuIJ/NUsJqo6trU10UUSdNRu0AtksTkomopyH2wKYivMrWLIw35bru49+aTbPP4DnTxTZjBw4FclrJvg6vSeOSomJJ7Ccxx0UTXGmVsb37irv0q1HXBWvooItauq2oRlyjN3HhlKYjeA7PsoTGb7qtn7LHLs+a0OyAc2933V2n0R6q7Kl0doy8VE6abwCuzsdlLuFf7QsO2Yxoq55/xCbUibsSk9KJFhbjSyjM5fEHs+ytoTWX3WmmFS6ngBRAgMfUVLSLEWP0qm2/S7i8KczY/KrUzYKtzshuRb2tI+q1fscUtu+IV2pE3YlM6aCyZhuvJOP2fTFhPI1Cy6RLhRrGgfqsexVabI5or9+uQHMqN7+XerD+lkYkVWh2cOI7lpabMvURWPiUxISMePrXkruNKClj4JCLJ/q8Fdpk3UUsSKVXzcQ6q7jy4GZXObYeAKDNbUMGXPJURHVJK938xeyOjlYky4XjP3Wn9EKo/9i8ftC8P2fJOjRWQmCr4jg1o1cQBXS6+stj7ObLQIUBnqw2NYNd0XcdSak81swWCEIQAub8q5UhojNxb1Xf2k2PYT46LpFHEYHAgioIII4g2IQHBS02T+fn4E0+YO6aiopgqvacu6BELHVIF2u95pwPMYHULMCIDXDt8VVLoy4jTmsODaHiPmko0u4Go/OxTtaKg48s1I9orvbtwKdlarE4Rl0bhOURFj3D2aqZjnutu07yfsm4RvcfZSxGU+y8//AM8UzvvyZpBlKgFzt3TO3annPYKAC+iVaxZqu0Y4XCOUpWfLJ6haODeK0coRVbTa6MNJ9kzgOPgoIrGlDgeK1LSmfwmP0SdJgVLXlvHh4jFSQZVgpfUnElSObqtHDglV4as/SV5YonFupURbqont1Wsvwxhekjnt1UTozdVGWjmongJljCNnxm6paJHGqy9wSkV4TLGEaxZgcFXzExopI0QKrm5hMsYQtPzVAVyU1H33E9ye2tN16o7VjYGyIk3Hhy8IVc80rk1vtPOgF+zioU9H8x/k1vxHTrx1YdWQq5vcOs4cmmnN54L3FV2w9lw5aBDl4QoyG3dHEnFzjqSSTqSrFCghCEAIQhAVG39lCYh0Fntu065tOh+hyXnXSFrixw3XA7pBxBwoV62uW8rfJ/pR0sIf7jRdvvgf/Qy44cKYku0ai+mcjCjluHcm2TzhkFTQ4hphhY8ag4HgVv0xBoualJdnRxTLr0mpBostmj9lUsm8qqYRrHwS7JRFsJ0HFbNmmg0/hUpiVC2Y61TjpYLW4ybaLd04zitTOtBuqjf4/JYLxj9Vdxk20WxnmlaPnmqoc8ZgqF8VXcY20XD5tuS0dPtVIYy1fGKLUZHpotXzgWjpwcFTmKsGYS7FEWj5vRLRZwk0Asknx1E+ZVs2SqQ1EmUpGjpaNHySUxEzKlmWqJJiaVDtKeoNclmenaBUMWIXGpWkQLuPEk9pJX0T5q/Iv0KD0sUD0mKOtxYyxEPngXa0Hs1PPeafzfbm7OzTetjBhkerwiOHve6MscaU9hVICEIQAhCEAIQhACEIQHI+VHkv0lY0AARadZuDYg14O1zz4rzlzy0lrgWuFiCKEEYgg4Fe5rn/ACj8mIU0N71IoHVeBjwDh7Q8RkViUcmlLB5ZDi0NcRmmWx6Glaj88VDtjZsWWfuRmFtfVeLsd/a75G44JNkTVYcUbUi1MdNNmBRUzYhWzYhCzU1kbdErh3aJmOGhlWn7qt6XRYMbRMFyN9JZLvfeyh6avFQviJgmRnpb8B4jVRueBfH8sknxFgxrfdMDIyXKB71A6MSojEVwTI1EcBmlnxaKB8bNKR5laSM5GYkyqmen6JWbn8hijY2xo83FEOBDdEccaYNHvOODRqfitqJlsQe9zncSbADXIL2bzaebPcLZqdZ1sYcEj1eDog97g3LO9h0XkJ5toMlSNFpGmaet7LD+gHP9RvwpevfrRkEIQgBCEIAQhCAEIQgBCEIAQhCAWm5RkVhZEa17Di1wqCvPdvebgir5R3/iefBrvk7/ACXpSyo1kuT52nYcaA/cjMfDdwcKV5HBw1BIQycX0BOSkOK0siMa9pxa9ocO4rjNq+bOVfV0F74DuAO+yv8Aa417A4LLiVSPNvTAs+lBXW0PNxPQ6lm5GbluO3XdrXUA7HFc7O7HmoX/AFJeMzXo3Fv+QBb4qVLYmdMhRvmQqh022tN4VGIJusGYHFKixZumQoXzIVY+aAzHelok+33laixbPmktEm1HLbMm4x/2ZaO+uYhu3e+lAug2d5rNpRvXayA2vtvBNMyAzeNdDRWpMnKx9oUzS0vCjTDwyEx73nBrGlzudvivadi+ZqVZR0xFfHObW/7bO2hLj/kF6FsvZMCWbuQITIbeDGgV1JxcdSqkTJ495K+ZyI+j513Rtx6JhBedHOu1vZU8l7BsjZECWhiFLwmw2DJouTxcTdx1JJVihUgIQhACEIQAhCEAIQhACEIQAhCEAIQhACEIQAhCEAIQhAcp5X4dhXgflL655oQoBLYnrhe8eRPs8kIVB3iEIQAhCEAIQhACEIQAhCEAIQhACEIQH//Z"
+                                alt=""> </a>
+                        <p>Jupiter is more than twice as massive than the other planets of our solar system combined.
+                            The giant planet's Great Red Spot is a centuries-old storm bigger than Earth.
+                        </p>
+                    </div>
+
+                    <div class="item">
+                        <a href="https://solarsystem.nasa.gov/planets/saturn/overview/" target="_blank">
+                            <img id="img6" src="saturn.png" alt=""> </a>
+                        <p>Saturn isn’t the only planet to have rings, but it definitely has the most beautiful ones.
+
+                            The rings we see are made of groups of tiny ringlets that surround Saturn. They’re made of
+                            chunks of ice and rock.
+
+                            Like Jupiter, Saturn is mostly a ball of hydrogen and helium.</p>
+                    </div>
+
+                    <div class="item">
+                        <a href="https://solarsystem.nasa.gov/planets/uranus/overview/" target="_blank">
+                            <img id="img7" src="uranus.png" alt=""> </a>
+                        <p>Uranus—seventh planet from the Sun—rotates at a nearly 90-degree angle from the plane of its
+                            orbit. This unique tilt makes Uranus appear to spin on its side.Uranus is about four times
+                            wider than Earth. If Earth were a large apple, Uranus would be the size of a basketball.</p>
+                    </div>
+
+                    <div class="item">
+                        <a href="https://solarsystem.nasa.gov/planets/neptune/overview/" target="_blank">
+                            <img id="img8"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyOn9imC4df92i8vVHO6ELc5DNdJK8vEf93Q&usqp=CAU"
+                                alt=""> </a>
+                        <p>Neptune—the eighth and most distant major planet orbiting our Sun—is dark, cold and whipped
+                            by supersonic winds. It was the first planet located through mathematical calculations.</p>
+                    </div>
+
+                </div>
+
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+
+            </center>
+
+            <h2 class="page-header" id="Telescopes">Telescopes</h2>
+
+            <center>
+                <div class="bg-primary movie_head" data-toggle="collapse" data-target="#HubbleSpaceTelescope">
+                    Hubble Space Telescope <i class="glyphicon glyphicon-chevron-down"></i>
+                </div>
+
+                <div id="HubbleSpaceTelescope" class="collapse">
+
+                    <div class="movie_text">
+                        <img
+                            src="https://hubblesite.org/files/live/sites/hubble/files/home/_images/hs-images-hubble-side12x12.jpg?t=tn370">
+                        <h5 class="text-primary text-capitalize"> Since its 1990 launch, Hubble has changed our
+                            fundamental understanding of the universe.</h5>
+
+                        <p>Named in honor of the trailblazing astronomer Edwin Hubble, the Hubble Space Telescope is a
+                            large, space-based observatory, which has revolutionized astronomy since its launch and
+                            deployment by the space shuttle Discovery in 1990. Far above rain clouds, light pollution,
+                            and atmospheric distortions, Hubble has a crystal-clear view of the universe. Scientists
+                            have used Hubble to observe some of the most distant stars and galaxies yet seen, as well as
+                            the planets in our solar system.
+
+                        </p>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="bg-primary movie_head" data-toggle="collapse" data-target="#JamesWebb">
+                    James Webb Telescope<i class="glyphicon glyphicon-chevron-down"></i>
+                </div>
+
+                <div id="JamesWebb" class="collapse">
+
+                    <div class="movie_text">
+                        <img src="https://www.howitworksdaily.com/wp-content/uploads/2013/10/JWST-online-facts.jpg">
+                        <h5 class="text-primary text-capitalize"> The James Webb Space Telescope will find the first
+                            galaxies that formed in the early universe and peer through dusty clouds to see stars
+                            forming planetary systems.</h5>
+
+                        <p>The James Webb Space Telescope (sometimes called JWST or Webb) is an orbiting infrared
+                            observatory that will complement and extend the discoveries of the Hubble Space Telescope,
+                            with longer wavelength coverage and greatly improved sensitivity. The longer wavelengths
+                            enable Webb to look much closer to the beginning of time and to hunt for the unobserved
+                            formation of the first galaxies, as well as to look inside dust clouds where stars and
+                            planetary systems are forming today.</p>
+                    </div>
+                </div>
+
+            </center>
+
+            <h2 class="page-header" id="Constellations">Constellations</h2>
+            <center>
+
+                <ul class="list_group">
+
+                    <li
+                        class=" list_group-item list_group-item-success col-lg-12 col-md-12 col-sm-12 col-xs-12 environment_li">
+                        <img src="https://www.nasa.gov/sites/default/files/styles/side_image/public/thumbnails/image/constellation_.jpg?itok=MmHfSJXf"
+                            class="img-responsive col-lg-3 col-md-3 col-sm-3 col-xs-4">
+                        <p class="img-responsive col-lg-3 col-md-3 col-sm-3 col-xs-4"> There are a few different
+                            definitions of constellations, but many people think of constellations as a group of stars.
+                            The constellations you can see at night depend on your location on Earth and the time of
+                            year. Constellations were named after objects, animals, and people long ago. Astronomers
+                            today still use constellations to name stars and meteor showers. </p>
+                    </li>
+
+                </ul>
+            </center>
+
+            <hr>
+
+</body>
+
+</html>
